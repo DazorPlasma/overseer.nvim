@@ -1,5 +1,7 @@
 local provider = require("overseer.template.make")
 
+-- These tests target Linux: filename precedence requires a case-sensitive filesystem
+-- where "makefile" and "Makefile" can exist as separate files.
 describe("make template", function()
   local root
 
